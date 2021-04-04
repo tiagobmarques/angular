@@ -45,6 +45,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./dynamic-datamaps/dynamic-datamaps.module').then(m => m.DynamicDatamapsModule),
       },
+      {
+        path: 'datamaps-editors',
+        loadChildren: () =>
+          import('./datamaps-editors/datamaps-editors.module').then(m => m.DatamapsEditorsModule),
+      },
     ],
   },
 ];

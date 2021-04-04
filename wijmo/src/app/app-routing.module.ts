@@ -20,6 +20,16 @@ const routes: Routes = [
         loadChildren: () =>
           import('./odatavirtual/Odatavirtual.module').then(m => m.OdatavirtualModule),
       },
+      {
+        path: 'infinite-scrolling',
+        loadChildren: () =>
+          import('./infinite-scrolling/infinite-scrolling.module').then(m => m.InfiniteScrollingModule),
+      },
+      {
+        path: 'unbound-grid',
+        loadChildren: () =>
+          import('./unbound-grid/unbound-grid.module').then(m => m.UnboundGridModule),
+      },
     ],
   },
 ];

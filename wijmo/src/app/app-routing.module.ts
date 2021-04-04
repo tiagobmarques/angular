@@ -35,6 +35,16 @@ const routes: Routes = [
         loadChildren: () =>
           import('./column-width/column-width.module').then(m => m.ColumnWidthModule),
       },
+      {
+        path: 'simple-datamaps',
+        loadChildren: () =>
+          import('./simple-datamaps/simple-datamaps.module').then(m => m.SimpleDatamapsModule),
+      },
+      {
+        path: 'dynamic-datamaps',
+        loadChildren: () =>
+          import('./dynamic-datamaps/dynamic-datamaps.module').then(m => m.DynamicDatamapsModule),
+      },
     ],
   },
 ];

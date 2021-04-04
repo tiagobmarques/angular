@@ -30,6 +30,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./unbound-grid/unbound-grid.module').then(m => m.UnboundGridModule),
       },
+      {
+        path: 'column-width',
+        loadChildren: () =>
+          import('./column-width/column-width.module').then(m => m.ColumnWidthModule),
+      },
     ],
   },
 ];

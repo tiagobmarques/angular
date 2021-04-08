@@ -50,6 +50,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./datamaps-editors/datamaps-editors.module').then(m => m.DatamapsEditorsModule),
       },
+      {
+        path: 'column-picker',
+        loadChildren: () =>
+          import('./column-picker/column-picker.module').then(m => m.ColumnPickerModule),
+      },
     ],
   },
 ];

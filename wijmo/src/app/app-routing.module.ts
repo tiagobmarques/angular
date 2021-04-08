@@ -55,6 +55,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('./column-picker/column-picker.module').then(m => m.ColumnPickerModule),
       },
+      {
+        path: 'reordering',
+        loadChildren: () =>
+          import('./reordering/reordering.module').then(m => m.ReorderingModule),
+      },
     ],
   },
 ];
